@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dz1</title>
+</head>
+<body>
+	<script>
+		var a = prompt("Как тебя зовут?");
+		var b = prompt("А в каком году ты родился?");
+		while ((b < 1900) || (b > 2017) || (isNaN(b))) {
+			b = prompt("Введите год рождения в формате 19хх");
+		}
+		var c = 2017 - b;
+		alert(a + " " + c);
+	</script>
+</body>
+</html>
